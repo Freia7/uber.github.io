@@ -1,0 +1,1147 @@
+@charset "UTF-8";
+/* line 1, D:/Учеба/Uber/sass/style.sass */
+* {
+  font-family: "Roboto";
+}
+
+/* line 1, D:/Учеба/Uber/sass/_general.sass */
+nav {
+  height: 50px;
+  background-color: #212121;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+/* line 10, D:/Учеба/Uber/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 15, D:/Учеба/Uber/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  list-style: none;
+  margin: 0cm;
+}
+
+/* line 22, D:/Учеба/Uber/sass/_general.sass */
+.gamburger {
+  display: none;
+}
+
+/* line 26, D:/Учеба/Uber/sass/_general.sass */
+.menu_link {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* line 30, D:/Учеба/Uber/sass/_general.sass */
+.menu_link:hover {
+  color: #1eacc7;
+}
+
+/* line 33, D:/Учеба/Uber/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted gray;
+  padding-right: 28px;
+}
+
+/* line 37, D:/Учеба/Uber/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 40, D:/Учеба/Uber/sass/_general.sass */
+.subheader {
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  top: 50px;
+}
+
+/* line 47, D:/Учеба/Uber/sass/_general.sass */
+.subheader_logo {
+  max-width: 100%;
+  margin-top: 16px;
+  display: block;
+}
+
+/* line 52, D:/Учеба/Uber/sass/_general.sass */
+.subheader_official {
+  font-size: 13px;
+  font-weight: 100;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-top: 6px;
+}
+
+/* line 59, D:/Учеба/Uber/sass/_general.sass */
+.subheader_call {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 67, D:/Учеба/Uber/sass/_general.sass */
+.subheader_phone {
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 8px;
+  text-align: right;
+  line-height: 24px;
+}
+
+/* line 76, D:/Учеба/Uber/sass/_general.sass */
+.subheader_btn {
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  border: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 172px;
+  height: 46px;
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  margin-top: 19px;
+  border-radius: 4px;
+}
+
+/* line 2, D:/Учеба/Uber/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 90, D:/Учеба/Uber/sass/_general.sass */
+.subheader_btn:hover {
+  border: 3px solid rgba(0, 0, 0, 0.07);
+}
+
+/* line 92, D:/Учеба/Uber/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+/* line 94, D:/Учеба/Uber/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url(/img/bg/main_bg.jpg) center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 99, D:/Учеба/Uber/sass/_general.sass */
+.promo_header {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 108, D:/Учеба/Uber/sass/_general.sass */
+.promo_subheader {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 22px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 118, D:/Учеба/Uber/sass/_general.sass */
+.promo_description {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 23px;
+  text-align: center;
+}
+
+/* line 126, D:/Учеба/Uber/sass/_general.sass */
+.promo_btn {
+  display: block;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
+  margin: 118px auto 0 auto;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 259px;
+  height: 63px;
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  border: none;
+  border-radius: 4px;
+}
+
+/* line 2, D:/Учеба/Uber/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 141, D:/Учеба/Uber/sass/_general.sass */
+.promo_btn:hover {
+  border: 3px solid rgba(0, 0, 0, 0.07);
+}
+
+/* line 144, D:/Учеба/Uber/sass/_general.sass */
+.advantages {
+  padding: 73px 0 65px 0;
+}
+
+/* line 147, D:/Учеба/Uber/sass/_general.sass */
+.label {
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+}
+
+/* line 159, D:/Учеба/Uber/sass/_general.sass */
+.title {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  text-align: center;
+  margin-top: 38px;
+}
+
+/* line 168, D:/Учеба/Uber/sass/_general.sass */
+.advanteges_icon {
+  background-color: #1eacc7;
+  display: flex;
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+  padding: 20px 20px;
+  justify-content: center;
+  margin-right: 26px;
+}
+
+/* line 178, D:/Учеба/Uber/sass/_general.sass */
+.advanteges_icon img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* line 182, D:/Учеба/Uber/sass/_general.sass */
+.advanteges_title {
+  font-size: 17px;
+  max-width: 341px;
+  font-weight: 400;
+  color: #1eacc7;
+}
+
+/* line 188, D:/Учеба/Uber/sass/_general.sass */
+.advantages_text {
+  max-width: 341px;
+}
+
+/* line 191, D:/Учеба/Uber/sass/_general.sass */
+.advantages_discr {
+  font-size: 15px;
+  font-weight: 300;
+  color: #202020;
+}
+
+/* line 196, D:/Учеба/Uber/sass/_general.sass */
+.advanteges_card {
+  display: flex;
+  margin-top: 35px;
+}
+
+/* line 200, D:/Учеба/Uber/sass/_general.sass */
+.subtitle {
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #222222;
+  text-align: center;
+}
+
+/* line 207, D:/Учеба/Uber/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+
+/* line 211, D:/Учеба/Uber/sass/_general.sass */
+.mobile .row {
+  margin-top: 32px;
+}
+
+/* line 213, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 300px;
+  height: 280px;
+  margin: 0 auto;
+  padding-top: 92px;
+  margin-bottom: 19px;
+}
+
+/* line 220, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/bg/mobile_screen_1.jpg") center center/cover no-repeat;
+}
+
+/* line 222, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/bg/mobile_screen_2.jpg") center center/cover no-repeat;
+}
+
+/* line 224, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/bg/mobile_screen_3.jpg") center center/cover no-repeat;
+}
+
+/* line 226, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/bg/mobile_screen_4.jpg") center center/cover no-repeat;
+}
+
+/* line 228, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/bg/mobile_screen_5.jpg") center center/cover no-repeat;
+}
+
+/* line 230, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/bg/mobile_screen_6.jpg") center center/cover no-repeat;
+}
+
+/* line 232, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* line 238, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  padding: 6px;
+  bottom: 35px;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 253, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_plus:before {
+  content: " ";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 260, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_plus:after {
+  content: " ";
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: #1eacc7;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s all;
+}
+
+/* line 271, D:/Учеба/Uber/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
+
+/* line 278, D:/Учеба/Uber/sass/_general.sass */
+.choice {
+  position: relative;
+  min-height: 900px;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+  padding: 57px 0 138px 0;
+}
+
+/* line 283, D:/Учеба/Uber/sass/_general.sass */
+.choice img {
+  position: relative;
+  display: block;
+  margin: 56px auto 0 auto;
+  z-index: 2;
+  width: 100%;
+}
+
+/* line 289, D:/Учеба/Uber/sass/_general.sass */
+.choice_text {
+  text-align: center;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 295, D:/Учеба/Uber/sass/_general.sass */
+.choice .label {
+  background-color: #ffffff;
+  color: #070716;
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 308, D:/Учеба/Uber/sass/_general.sass */
+.choice_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 499px;
+  width: 100%;
+  background-color: #070716;
+  z-index: 1;
+}
+
+/* line 316, D:/Учеба/Uber/sass/_general.sass */
+.choice .title {
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 320, D:/Учеба/Uber/sass/_general.sass */
+.choice .subtitle {
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 325, D:/Учеба/Uber/sass/_general.sass */
+.require {
+  padding: 68px 0 84px 0;
+}
+
+/* line 327, D:/Учеба/Uber/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 329, D:/Учеба/Uber/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 331, D:/Учеба/Uber/sass/_general.sass */
+.require_title {
+  color: #1eacc7;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* line 335, D:/Учеба/Uber/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 339, D:/Учеба/Uber/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 345, D:/Учеба/Uber/sass/_general.sass */
+.require_list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_blue.svg") center center/cover no-repeat;
+}
+
+/* line 354, D:/Учеба/Uber/sass/_general.sass */
+.require_desc {
+  margin-top: 25px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #1eacc7;
+}
+
+/* line 361, D:/Учеба/Uber/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 365, D:/Учеба/Uber/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../icons/check_red.svg") center center/cover no-repeat;
+}
+
+/* line 367, D:/Учеба/Uber/sass/_general.sass */
+.cities {
+  position: relative;
+  min-height: 900px;
+  background: url("../img/bg/map.jpg") center center/cover no-repeat;
+  padding: 57px 0 138px 0;
+}
+
+/* line 372, D:/Учеба/Uber/sass/_general.sass */
+.cities_label {
+  background-color: #ffffff;
+  color: #070716;
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 385, D:/Учеба/Uber/sass/_general.sass */
+.cities .title {
+  color: #ffffff;
+}
+
+/* line 387, D:/Учеба/Uber/sass/_general.sass */
+.cities .subtitle {
+  color: #ffffff;
+}
+
+/* line 389, D:/Учеба/Uber/sass/_general.sass */
+.cities_link {
+  bottom: 50px;
+  position: absolute;
+  color: #1eacc7;
+  text-decoration: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 396, D:/Учеба/Uber/sass/_general.sass */
+.cities_link:hover {
+  color: #ffffff;
+}
+
+/* line 399, D:/Учеба/Uber/sass/_general.sass */
+footer {
+  width: 100%;
+  min-height: 93px;
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 403, D:/Учеба/Uber/sass/_general.sass */
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1eacc7;
+  margin: 0 auto;
+}
+
+/* line 409, D:/Учеба/Uber/sass/_general.sass */
+.footer_wrapper {
+  padding-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* line 414, D:/Учеба/Uber/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 416, D:/Учеба/Uber/sass/_general.sass */
+.footer_wrapper > div:last-child {
+  align-items: flex-end;
+}
+
+/* line 420, D:/Учеба/Uber/sass/_general.sass */
+.footer_icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 160px;
+}
+
+/* line 425, D:/Учеба/Uber/sass/_general.sass */
+.footer_icons .fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 436, D:/Учеба/Uber/sass/_general.sass */
+.footer_main {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 439, D:/Учеба/Uber/sass/_general.sass */
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 443, D:/Учеба/Uber/sass/_general.sass */
+.footer_nav a {
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #070716;
+  text-decoration: none;
+}
+
+/* line 449, D:/Учеба/Uber/sass/_general.sass */
+.footer_nav_2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 453, D:/Учеба/Uber/sass/_general.sass */
+.footer_nav_2 a {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #999999;
+}
+
+/* line 458, D:/Учеба/Uber/sass/_general.sass */
+.footer_language {
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #1eacc7;
+  margin: 0 auto;
+  margin-top: 19px;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, D:/Учеба/Uber/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, D:/Учеба/Uber/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, D:/Учеба/Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 11, D:/Учеба/Uber/sass/_media.sass */
+  .footer_mobile {
+    display: flex;
+  }
+  /* line 13, D:/Учеба/Uber/sass/_media.sass */
+  .footer_mobile a {
+    margin: 0 3px;
+  }
+  /* line 15, D:/Учеба/Uber/sass/_media.sass */
+  .footer_mobile a img {
+    width: 100%;
+  }
+  /* line 18, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 50%;
+  }
+  /* line 20, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 25%;
+  }
+  /* line 22, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 25%;
+  }
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1200px) and (max-width: 991px) {
+  /* line 30, D:/Учеба/Uber/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 32, D:/Учеба/Uber/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 35, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 37, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_phone {
+    font-size: 18px;
+  }
+  /* line 39, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  /* line 44, D:/Учеба/Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 46, D:/Учеба/Uber/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 49, D:/Учеба/Uber/sass/_media.sass */
+  .advanteges_card {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 52, D:/Учеба/Uber/sass/_media.sass */
+  .advanteges_icon {
+    margin-right: 0px;
+  }
+  /* line 54, D:/Учеба/Uber/sass/_media.sass */
+  .advanteges_title {
+    margin-top: 20px;
+  }
+  /* line 56, D:/Учеба/Uber/sass/_media.sass */
+  .advanteges_discr {
+    width: 300px;
+    margin-top: 20px;
+  }
+  /* line 60, D:/Учеба/Uber/sass/_media.sass */
+  .mobile_item {
+    width: 290px;
+  }
+  /* line 62, D:/Учеба/Uber/sass/_media.sass */
+  .mobile_item__subtitle {
+    font-size: 16px;
+  }
+  /* line 65, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper {
+    flex-wrap: wrap;
+  }
+  /* line 67, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  /* line 72, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 100%;
+  }
+  /* line 74, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 100%;
+    justify-content: center;
+  }
+  /* line 77, D:/Учеба/Uber/sass/_media.sass */
+  .footer_icons {
+    display: flex;
+  }
+  /* line 79, D:/Учеба/Uber/sass/_media.sass */
+  .footer_icons a {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 83, D:/Учеба/Uber/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 93, D:/Учеба/Uber/sass/_media.sass */
+  .menu_item {
+    margin: 10px 0;
+    border: none;
+    padding-right: 0;
+  }
+  /* line 97, D:/Учеба/Uber/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 99, D:/Учеба/Uber/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 101, D:/Учеба/Uber/sass/_media.sass */
+  .gamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 109, D:/Учеба/Uber/sass/_media.sass */
+  .gamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 117, D:/Учеба/Uber/sass/_media.sass */
+  .gamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 119, D:/Учеба/Uber/sass/_media.sass */
+  .gamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 121, D:/Учеба/Uber/sass/_media.sass */
+  .gamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 123, D:/Учеба/Uber/sass/_media.sass */
+  .gamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 125, D:/Учеба/Uber/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 127, D:/Учеба/Uber/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 130, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 138, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 180px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* line 145, D:/Учеба/Uber/sass/_media.sass */
+  .promo_header {
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 148, D:/Учеба/Uber/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 150, D:/Учеба/Uber/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 152, D:/Учеба/Uber/sass/_media.sass */
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  /* line 155, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 157, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  /* line 159, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 161, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_phone {
+    font-size: 12px;
+    font-weight: 400px;
+    margin-top: 5px;
+  }
+  /* line 165, D:/Учеба/Uber/sass/_media.sass */
+  .subheader_btn {
+    width: 110px;
+    height: 22px;
+    font-size: 10px;
+    margin-top: 3px;
+  }
+  /* line 170, D:/Учеба/Uber/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 73px 0 35px 0;
+  }
+  /* line 173, D:/Учеба/Uber/sass/_media.sass */
+  .promo_description {
+    display: none;
+  }
+  /* line 175, D:/Учеба/Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 30px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  /* line 179, D:/Учеба/Uber/sass/_media.sass */
+  .promo_subheader {
+    font-size: 20px;
+    margin-top: 33px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  /* line 184, D:/Учеба/Uber/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+    font-size: 16px;
+  }
+  /* line 189, D:/Учеба/Uber/sass/_media.sass */
+  .promo_btn:hover {
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  /* line 192, D:/Учеба/Uber/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  /* line 194, D:/Учеба/Uber/sass/_media.sass */
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+  }
+  /* line 198, D:/Учеба/Uber/sass/_media.sass */
+  .advantages {
+    padding: 22px 0 36px 0;
+  }
+  /* line 200, D:/Учеба/Uber/sass/_media.sass */
+  .advantages_card {
+    width: 100%;
+  }
+  /* line 202, D:/Учеба/Uber/sass/_media.sass */
+  .advantages_icon {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 205, D:/Учеба/Uber/sass/_media.sass */
+  .advantages .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  /* line 209, D:/Учеба/Uber/sass/_media.sass */
+  .advantages_text {
+    width: 100%;
+    margin-top: 27px;
+  }
+  /* line 212, D:/Учеба/Uber/sass/_media.sass */
+  .mobile {
+    padding: 20px 0 40px 0;
+  }
+  /* line 214, D:/Учеба/Uber/sass/_media.sass */
+  .mobile_item {
+    height: 254px;
+    padding: 81px 40px 0 40px;
+  }
+  /* line 217, D:/Учеба/Uber/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  /* line 220, D:/Учеба/Uber/sass/_media.sass */
+  .mobile_item_plus {
+    bottom: 28px;
+  }
+  /* line 223, D:/Учеба/Uber/sass/_media.sass */
+  .mobile_item_plus:before, .mobile_item_plus:after {
+    background-color: #1eacc7;
+  }
+  /* line 225, D:/Учеба/Uber/sass/_media.sass */
+  .mobile .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  /* line 229, D:/Учеба/Uber/sass/_media.sass */
+  .mobile .row {
+    margin-top: 30px;
+  }
+  /* line 231, D:/Учеба/Uber/sass/_media.sass */
+  .choice {
+    padding: 25px 0 33px 0;
+    min-height: 390px;
+    background: #000;
+  }
+  /* line 235, D:/Учеба/Uber/sass/_media.sass */
+  .require {
+    padding-top: 45px;
+  }
+  /* line 237, D:/Учеба/Uber/sass/_media.sass */
+  .require .row {
+    margin-top: 0px;
+  }
+  /* line 239, D:/Учеба/Uber/sass/_media.sass */
+  .require .row_block {
+    margin: 30px 0 0 0;
+  }
+  /* line 241, D:/Учеба/Uber/sass/_media.sass */
+  .cities {
+    min-height: 360px;
+    padding: 25px 0 30px 0;
+  }
+  /* line 244, D:/Учеба/Uber/sass/_media.sass */
+  .cities_link {
+    width: 200px;
+    display: block;
+    bottom: 30px;
+    line-height: 15px;
+    font-size: 14px;
+  }
+  /* line 250, D:/Учеба/Uber/sass/_media.sass */
+  .cities .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  /* line 254, D:/Учеба/Uber/sass/_media.sass */
+  .cities .subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 11px;
+  }
+  /* line 258, D:/Учеба/Uber/sass/_media.sass */
+  footer {
+    padding: 25px 0 20px 0;
+  }
+  /* line 261, D:/Учеба/Uber/sass/_media.sass */
+  .footer_divider {
+    width: 253px;
+    margin: 0 auto;
+  }
+  /* line 264, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper {
+    padding-top: 22px;
+    flex-wrap: wrap;
+  }
+  /* line 267, D:/Учеба/Uber/sass/_media.sass */
+  .footer_icons {
+    flex-direction: row;
+  }
+  /* line 269, D:/Учеба/Uber/sass/_media.sass */
+  .footer_mobile {
+    flex-direction: row;
+  }
+  /* line 271, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div {
+    margin-bottom: 20px;
+  }
+  /* line 273, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    order: 2;
+  }
+  /* line 275, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    order: 1;
+  }
+  /* line 277, D:/Учеба/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    order: 3;
+  }
+  /* line 279, D:/Учеба/Uber/sass/_media.sass */
+  .footer_main {
+    width: 390px;
+  }
+  /* line 281, D:/Учеба/Uber/sass/_media.sass */
+  .footer_main_nav {
+    padding: 0;
+    font-size: 14px;
+  }
+  /* line 284, D:/Учеба/Uber/sass/_media.sass */
+  .footer_main_nav_2 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* line 287, D:/Учеба/Uber/sass/_media.sass */
+  .footer_main_nav_2 a {
+    margin: 0 7px;
+  }
+  /* line 289, D:/Учеба/Uber/sass/_media.sass */
+  .footer_main_language {
+    margin-top: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
